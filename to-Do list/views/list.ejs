@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejs</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box"id="heading">
+        <h1 style="text-align: center;"><%=http%></h1>
+    </div>
+
+<div class="box">
+<% for(let i=0;i<inpots.length;i++){ %>
+    <div class="item">
+    <input type="checkbox">
+    <p> <%=inpots[i]%> </p>
+    </div>
+<% } %>
+
+<form action="/" method="post"autocomplete="off">
+    <input type="text" name="todoItem"placeholder="New Event">
+    <button type="submit" name="button">+</button>
+</form>
+</div>
+</body>
+</html>
